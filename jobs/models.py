@@ -4,3 +4,13 @@ from django.db import models
 class Job(models.Model):
   image = models.ImageField(upload_to='images/')
   summary = models.CharField(max_length=200)
+  skills = models.CharField(max_length=200, default='html css javascript')
+
+  # environment
+  # created date
+
+# client
+# objective
+# role
+# skills
+# term

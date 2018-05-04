@@ -1,0 +1,12 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<main role="main">
+  <div class="container">
+    <h1 class="text-center pt-3">{{ job.skills }}</h1>
+    <p class="text-center bgcolor">{{ job.summary }}</p>
+    <img class="img-fluid" src="{{ job.image.url }}">
+    <br>
+  </div>
+</main>
+{% endblock %}
