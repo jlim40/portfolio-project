@@ -1,20 +1,6 @@
-// const aboutMe = new TypeIt('#type-it-1', {
-//   strings: 'var aboutMe = {',
-//   speed: 100,
-//   autoStart: false,
-//   afterComplete: function(instance) {
-//     instance.cursor = false;
-//     const type2 = new TypeIt('#type-it-2', {
-//       strings: "name: 'Jason'",
-//       speed: 100,
-//       autoStart: false
-//     });
-//   }
-// });
-
 new TypeIt('#type-it-1', {
-  strings: 'var aboutMe = {',
-  speed: 100,
+  strings: 'const aboutMe = {',
+  speed: 130,
   autoStart: false,
   afterComplete: function() {
     $('#type-it-1')
@@ -23,7 +9,7 @@ new TypeIt('#type-it-1', {
 
     new TypeIt('#type-it-2', {
       strings: "name: 'Jason',",
-      speed: 100,
+      speed: 130,
       autoStart: false,
       afterComplete: function() {
         $('#type-it-2')
@@ -32,7 +18,7 @@ new TypeIt('#type-it-1', {
 
         new TypeIt('#type-it-3', {
           strings: "location: 'Toronto',",
-          speed: 100,
+          speed: 130,
           autoStart: false,
           afterComplete: function() {
             $('#type-it-3')
@@ -41,7 +27,7 @@ new TypeIt('#type-it-1', {
 
             new TypeIt('#type-it-4', {
               strings: 'roles: [',
-              speed: 100,
+              speed: 130,
               autoStart: false,
               afterComplete: function() {
                 $('#type-it-4')
@@ -49,7 +35,7 @@ new TypeIt('#type-it-1', {
                   .css('display', 'none');
 
                 new TypeIt('#type-it-5', {
-                  speed: 100,
+                  speed: 130,
                   autoStart: false,
                   afterComplete: function() {
                     $('#type-it-5')
@@ -58,7 +44,7 @@ new TypeIt('#type-it-1', {
 
                     new TypeIt('#type-it-6', {
                       strings: "'Javascript Developer'",
-                      speed: 100,
+                      speed: 130,
                       autoStart: false,
                       afterComplete: function() {
                         $('#type-it-6')
@@ -67,7 +53,7 @@ new TypeIt('#type-it-1', {
 
                         new TypeIt('#type-it-7', {
                           strings: '],',
-                          speed: 100,
+                          speed: 130,
                           autoStart: false,
                           afterComplete: function() {
                             $('#type-it-7')
@@ -76,7 +62,7 @@ new TypeIt('#type-it-1', {
 
                             new TypeIt('#type-it-8', {
                               strings: "hobby: 'Drinking Espresso'",
-                              speed: 100,
+                              speed: 130,
                               autoStart: false,
                               afterComplete: function() {
                                 $('#type-it-8')
@@ -85,34 +71,38 @@ new TypeIt('#type-it-1', {
 
                                 new TypeIt('#type-it-9', {
                                   strings: '};',
-                                  speed: 100,
+                                  speed: 500,
                                   autoStart: false
                                 });
                               }
-                            });
+                            }).pause(500);
                           }
-                        });
+                        }).pause(500);
                       }
-                    });
+                    }).pause(500);
                   }
                 })
                   .type("'Senior Web D")
-                  .pause(200)
+                  .pause(400)
                   .type('e')
                   .pause(400)
                   .type('v')
+                  .pause(1300)
+                  .delete(1)
+                  .pause(1300)
+                  .delete(1)
                   .pause(700)
-                  .delete(1)
-                  .pause(400)
-                  .delete(1)
-                  .pause(300)
+                  .options({ speed: 200 })
                   .delete()
-                  .type("'Junior Web Developer',");
+                  .pause(300)
+                  .options({ speed: 130 })
+                  .type("'Junior Web Developer',")
+                  .pause(500);
               }
-            });
+            }).pause(500);
           }
-        });
+        }).pause(500);
       }
-    });
+    }).pause(500);
   }
-});
+}).pause(500);
