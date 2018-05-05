@@ -1,10 +1,9 @@
 #showcase {
+  background: rgba(30, 30, 30);
   position: relative;
-  background: url("../img/mountains.jpg");
-  min-height: 90vh;
+  min-height: 87vh;
 }
 #showcase .primary-overlay {
-  background: rgba(50, 146, 166, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -24,6 +23,7 @@
   width: 70%;
   height: auto;
   margin-left: 14%;
+  border: 3px solid white;
 }
 
 #showcase .aboutme {
