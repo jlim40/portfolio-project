@@ -3,15 +3,13 @@
 
 {% block content %}
 <main role="main">
-
-  <!-- SHOWCASE -->
+  <!--
   <section id="showcase" class="py-5">
-    <div class="primary-overlay text-white">
-      <div class="container">
+    <div class="container">
+      <div class="primary-overlay text-white">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="{% static 'JasonLim.png' %}" alt="" class="img-fluid rounded"><!--  d-none d-lg-block -->
-            <!-- <img height="300" src="{% static 'portfolio/JasonLim.png' %}" alt=""> -->
+            <img src="{% static 'img/JasonLim.png' %}" alt="" class="img-fluid rounded">
           </div>
           <div class="col-md-6">
             <div class="aboutme">
@@ -25,6 +23,73 @@
               <span class="lead pl-3" id="type-it-8"></span><br>
               <span class="lead" id="type-it-9"></span><br>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+  
+
+  <!-- INFO SECTION -->
+  <section id="aboutme" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 px-5 pr-md-5 align-self-center">
+          <img src="{% static 'img/JasonLim.png' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-7 pl-md-5 align-self-center py-3">
+          <div class="text-white">
+            <span class="lead" id="type-it-1"></span><br>
+            <span class="lead pl-3" id="type-it-2"></span><br>
+            <span class="lead pl-3" id="type-it-3"></span><br>
+            <span class="lead pl-3" id="type-it-4"></span><br>
+            <span class="lead pl-5" id="type-it-5"></span><br>
+            <span class="lead pl-5" id="type-it-6"></span><br>
+            <span class="lead pl-3" id="type-it-7"></span><br>
+            <span class="lead pl-3" id="type-it-8"></span><br>
+            <span class="lead" id="type-it-9"></span><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS HEADING SECTION -->
+  <section id="skills-heading">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col align-self-center">
+          <div class="container">
+            <h1>Skills <i class="fas fa-code"></i></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="text-center">
+    <h1>Skills!!!</h1>
+  </section>
+
+  <!-- VIDEO PLAY SECTION -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a
+              href="#"
+              class="video"
+              data-video="https://www.youtube.com/embed/HnwsG9a5riA"
+              data-toggle="modal"
+              data-target="#videoModal"
+            >
+              <i class="fa fa-play"></i>
+            </a>
+            <h1>See What We Do</h1>
           </div>
         </div>
       </div>
