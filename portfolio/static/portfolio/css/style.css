@@ -15,14 +15,20 @@ body {
 /* ABOUT ME */
 
 #aboutme {
-  background: rgba(30, 30, 30);
+  background: rgb(30, 30, 30);
   height: 90vh;
 }
+
 #aboutme .container {
   height: 100%;
 }
+
 #aboutme .row {
   height: 100%;
+}
+
+#aboutme img {
+  border: 2px solid white;
 }
 
 /* SKILLS */
