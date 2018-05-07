@@ -61,6 +61,10 @@ body {
   color: lightgoldenrodyellow;
 }
 
+#skills {
+  background: #FEF3E4;
+}
+
 #skills .col-2 {
   min-width: 180px;
 }
