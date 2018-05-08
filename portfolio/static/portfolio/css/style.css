@@ -17,7 +17,7 @@ body {
 
 #aboutme {
   background: rgb(30, 30, 30);
-  height: 95vh;
+  height: 100vh;
 }
 
 #aboutme .container {
@@ -31,6 +31,21 @@ body {
 #aboutme img {
   border: 2px solid white;
 }
+
+#aboutme .pl-4 {
+  padding-left: 2.2rem !important;
+}
+
+#aboutme .pl-5 {
+  padding-left: 4.4rem !important;
+}
+
+@media (min-width: 992px) {
+  #aboutme span {
+    font-size: 2rem;
+  }
+}
+
 
 /* Skills */
 #skills-heading {

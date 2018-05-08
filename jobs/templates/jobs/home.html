@@ -14,9 +14,6 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
           <a href="#aboutme" class="nav-link">About Me</a>
         </li>
         <li class="nav-item">
@@ -39,22 +36,22 @@
 <main role="main">
 
   <!-- ABOUT ME -->
-  <section id="aboutme" class="py-3">
+  <section id="aboutme" class="py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-5 px-5 pr-md-5 align-self-center">
           <img src="{% static 'img/JasonLim.png' %}" class="img-fluid rounded" alt="">
         </div>
-        <div class="col-md-7 pl-5 align-self-center py-3">
+        <div class="col-md-7 pl-4 pl-md-5 align-self-center py-3">
           <div class="text-white">
             <span class="lead" id="type-it-1"></span><br>
-            <span class="lead pl-3" id="type-it-2"></span><br>
-            <span class="lead pl-3" id="type-it-3"></span><br>
-            <span class="lead pl-3" id="type-it-4"></span><br>
+            <span class="lead pl-4" id="type-it-2"></span><br>
+            <span class="lead pl-4" id="type-it-3"></span><br>
+            <span class="lead pl-4" id="type-it-4"></span><br>
             <span class="lead pl-5" id="type-it-5"></span><br>
             <span class="lead pl-5" id="type-it-6"></span><br>
-            <span class="lead pl-3" id="type-it-7"></span><br>
-            <span class="lead pl-3" id="type-it-8"></span><br>
+            <span class="lead pl-4" id="type-it-7"></span><br>
+            <span class="lead pl-4" id="type-it-8"></span><br>
             <span class="lead" id="type-it-9"></span><br>
           </div>
         </div>
@@ -135,8 +132,74 @@
     </div>
   </section>
 
+  <section id="portfolio" class="py-5 text-center">
+    <div class="container">
+      <div class="row mb-md-4 justify-content-center align-items-center">
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </div>
+      <div class="row mb-md-4 justify-content-center align-items-center">
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
   <section class="text-center">
-    <h1>Portfolio!!!</h1>
+    <!-- Button trigger modal -->
+    <div data-toggle="modal" data-target="#exampleModalCenter">
+      Launch demo modal
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- CONTACT -->
