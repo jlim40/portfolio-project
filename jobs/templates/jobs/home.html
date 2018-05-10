@@ -134,38 +134,14 @@
 
   <section id="portfolio" class="py-5 text-center">
     <div class="container">
-      <div class="row mb-md-4 justify-content-center align-items-center">
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-      </div>
-      <div class="row mb-md-4 justify-content-center align-items-center">
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-      </div>
-      <div class="row justify-content-center align-items-center">
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
-        <div class="col">
-          <img src="{% static 'img/jobs/todo.png' %}" class="img-fluid img-thumbnail" alt="">
-        </div>
+      <div class="row px-lg-5 justify-content-center align-items-center">
+        {% for job in jobs.all %}
+          <div class="col-sm-6 col-md-4 mb-4">
+            <a href="{% url 'jobdetail' job.id %}">        
+              <img src="{{ job.image.url }}" class="img-fluid img-thumbnail" alt="">
+            </a>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </section>
@@ -228,7 +204,7 @@
 
         {% for job in jobs.all %}
           <div class="col-md-4">
-            <a href="{% url 'detail' job.id %}">
+            <a href="{% url 'jobdetail' job.id %}">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="{{ job.image.url }}">
                 <div class="card-body">
