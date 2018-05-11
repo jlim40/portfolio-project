@@ -105,7 +105,7 @@ body {
 #portfolio-heading {
   position: relative;
   min-height: 200px;
-  background: url("/static/img/media.jpg");
+  background: url("/static/img/code.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -125,7 +125,7 @@ body {
 #contact-heading {
   position: relative;
   min-height: 200px;
-  background: url("/static/img/contact.jpg");
+  background: url("/static/img/code.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
