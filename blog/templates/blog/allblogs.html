@@ -1,6 +1,9 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
+
+<body id="home">
+
 <nav class="navbar navbar-expand-md navbar-light fixed-top py-2">
   <div class="container">
     <a href="{% url 'home' %}" class="navbar-brand">
@@ -50,4 +53,14 @@
 
   </div>
 </main>
+
+<footer id="footer" class="py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col ml-auto">
+        <p class="lead">Copyright &copy; 2018</p>
+      </div>
+    </div>
+  </div>
+</footer>
 {% endblock %}
