@@ -35,17 +35,27 @@
 </nav>
 
 
-<main role="main">
+<main role="main" class="jobdetails">
   <div class="container mb-5">
-    <h1 class="text-center pt-3">{{ job.skills }}</h1>
-    <p class="text-center bgcolor">{{ job.summary }}</p>
-    <img class="img-fluid img-thumbnail" src="{{ job.image.url }}">
-    <br>
+    <div class="header">
+        <h1 class="text-center bgcolor">{{ job.summary }}</h1>
+        <h2 class="text-center">{{ job.skills }}</h2>
+    </div>
+    <hr>
+    <div class="portImage">
+      <div class="top">
+        <div class="button red"></div>
+        <div class="button yellow"></div>
+        <div class="button green"></div>
+      </div>
+      <img class="img-fluid img-thumbnail" src="{{ job.image.url }}">
+      <br>
+    </div>
   </div>
 </main>
 
 
-<footer id="footer" class="py-5 text-white toBottom">
+<footer id="footer" class="py-4 text-white toBottom">
   <div class="container">
     <div class="row text-center">
       <div class="col ml-auto">

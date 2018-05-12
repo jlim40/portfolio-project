@@ -50,7 +50,7 @@ body {
 /* Skills */
 #skills-heading {
   position: relative;
-  min-height: 200px;
+  min-height: 130px;
   background: url('/static/img/code.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@ body {
 /* Portfolios */
 #portfolio-heading {
   position: relative;
-  min-height: 200px;
+  min-height: 130px;
   background: url("/static/img/code.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -144,14 +144,118 @@ body {
   margin: 0;
 }
 
+#portfolio .larger {
+  position: absolute;
+  transition: .5s ease;
+  margin: 0 auto;
+}
+#portfoio .larger:hover {
+  transform: scale(1.5);
+}
+
 .fa-folder-open {
   color: skyblue;
+}
+
+.portImage {
+  position: relative;
+}
+
+.portImage .top {
+  position: relative;
+  height: 2rem;
+  width: 100%;
+  background: rgb(229, 230, 232);
+  border-top-left-radius: 7px 7px;
+  border-top-right-radius: 7px 7px;
+  border-bottom-left-radius: 2px 2px;
+  border-bottom-right-radius: 2px 2px;
+  box-shadow: 0 1px rgba(152, 152, 152, 0.1);
+}
+
+.portImage .top .button {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portImage .top .red {
+  background: #F46467;
+  left: 1.3rem;
+}
+
+.portImage .top .yellow {
+  background: #FCBB3C;
+  left: 2.6rem;
+}
+ 
+.portImage .top .green {
+  background: #36C84B;
+  left: 3.9rem;
+}
+
+/*
+.jobdetails .header {
+  background: linear-gradient(to top right, #1f1f1f 7%, #a0a0a0 124%);
+  border-radius: 3px 3px;
+  padding-bottom: 1rem;
+  min-height: 140px;
+}
+*/
+
+.jobdetails hr {
+  height: 1px;
+  background: red;
+  margin-top: 0.5rem;
+  margin-bottom: 1.8rem;
+}
+
+
+.jobdetails h1 {
+  animation: fadein 2s;
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+      transform: translate(0, 30px);
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.jobdetails h2 {
+  animation: fadein2 2.5s;
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+}
+
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Contact */
 #contact-heading {
   position: relative;
-  min-height: 200px;
+  min-height: 130px;
   background: url("/static/img/code.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -173,11 +277,19 @@ body {
   background: rgb(30, 30, 30);
 }
 
+#footer p {
+  margin: 0;
+}
+
 .body {
   position: relative;
   height: 100vh;
 }
-.toBottom {
-  position: absolute;
-  bottom: 0;
+
+@media (max-width: 576px) {
+  .toBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

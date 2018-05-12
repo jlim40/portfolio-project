@@ -175,8 +175,10 @@
       <div class="row px-lg-5 justify-content-center align-items-center">
         {% for job in jobs.all %}
           <div class="col-sm-6 col-md-4 mb-4">
-            <a href="{% url 'jobdetail' job.id %}">        
-              <img src="{{ job.image.url }}" class="img-fluid img-thumbnail" alt="">
+            <a href="{% url 'jobdetail' job.id %}">   
+              <div class="larger">
+                <img src="{{ job.image.url }}" class="img img-thumbnail" alt="">
+              </div>     
             </a>
           </div>
         {% endfor %}
