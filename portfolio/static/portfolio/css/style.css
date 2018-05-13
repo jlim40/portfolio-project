@@ -16,7 +16,7 @@ body {
 /* ABOUT ME */
 
 #aboutme {
-  background: rgb(30, 30, 30);
+  background: rgb(46, 46, 46);
   height: 100vh;
 }
 
@@ -46,6 +46,17 @@ body {
   }
 }
 
+.type-it-blue {
+  color: #66D9EF;
+}
+
+.type-it-red {
+  color: #F92672;
+}
+
+.type-it-yellow {
+  color: #E6DB74;
+}
 
 /* Skills */
 #skills-heading {

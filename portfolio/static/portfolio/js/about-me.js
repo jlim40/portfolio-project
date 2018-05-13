@@ -1,5 +1,6 @@
 new TypeIt('#type-it-1', {
-  strings: 'const aboutMe = {',
+  strings:
+    '<span class="type-it-blue pr-2">const</span> aboutMe<span class="type-it-red px-2"> = </span>{',
   speed: 130,
   autoStart: false,
   afterComplete: function() {
@@ -8,7 +9,7 @@ new TypeIt('#type-it-1', {
       .css('display', 'none');
 
     new TypeIt('#type-it-2', {
-      strings: "name: 'Jason',",
+      strings: 'name: <span class="type-it-yellow pl-2"> \'Jason\'</span>,',
       speed: 130,
       autoStart: false,
       afterComplete: function() {
@@ -17,7 +18,8 @@ new TypeIt('#type-it-1', {
           .css('display', 'none');
 
         new TypeIt('#type-it-3', {
-          strings: "location: 'Toronto',",
+          strings:
+            'location: <span class="type-it-yellow pl-2"> \'Toronto\'</span>,',
           speed: 130,
           autoStart: false,
           afterComplete: function() {
@@ -43,7 +45,8 @@ new TypeIt('#type-it-1', {
                       .css('display', 'none');
 
                     new TypeIt('#type-it-6', {
-                      strings: "'Javascript Developer'",
+                      strings:
+                        '<span class="type-it-yellow">\'Javascript Developer\'</span>',
                       speed: 130,
                       autoStart: false,
                       afterComplete: function() {
@@ -61,7 +64,8 @@ new TypeIt('#type-it-1', {
                               .css('display', 'none');
 
                             new TypeIt('#type-it-8', {
-                              strings: "hobby: 'Drinking Espresso'",
+                              strings:
+                                'hobby: <span class="type-it-yellow pl-2"> \'Drinking Espresso\'</span>,',
                               speed: 130,
                               autoStart: false,
                               afterComplete: function() {
@@ -85,7 +89,7 @@ new TypeIt('#type-it-1', {
                   .type("'Senior Web D")
                   .pause(400)
                   .type('e')
-                  .pause(400)
+                  .pause(700)
                   .type('v')
                   .pause(1300)
                   .delete(1)
