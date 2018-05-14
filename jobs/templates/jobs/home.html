@@ -5,7 +5,7 @@
 
 <body id="home">
 
-<nav class="navbar navbar-expand-md navbar-light fixed-top py-2">
+<nav class="navbar navbar-expand-md navbar-light fixed-top py-1">
   <div class="container">
     <a href="#home" class="navbar-brand">
       <h3 class="d-inline align-middle">Jason</h3>
@@ -63,15 +63,7 @@
 
   <!-- SKILLS -->
   <section id="skills-heading">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col align-self-center">
-          <div class="container">
-            <h1>Skills <i class="fas fa-code"></i></h1>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1 class="sectionTitle">Skills <i class="fas fa-code"></i></h1>
   </section>
 
   <section id="skills" class="py-5 text-center">
@@ -159,15 +151,7 @@
 
   <!-- PORTFOLIO -->
   <section id="portfolio-heading">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col align-self-center">
-          <div class="container">
-            <h1>Portfolio <i class="fas fa-folder-open"></i></h1>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1 class="sectionTitle">Portfolio <i class="fas fa-folder-open"></i></h1>
   </section>
 
   <section id="portfolio" class="py-5 text-center">
@@ -178,7 +162,7 @@
             <a href="{% url 'jobdetail' job.id %}">   
               <div class="larger">
                 <img src="{{ job.image.url }}" class="img img-thumbnail" alt="">
-                <span clas="title">{{ job.summary }}</span>
+                <span>{{ job.summary }}</span>
               </div>     
             </a>
           </div>
@@ -187,89 +171,61 @@
     </div>
   </section>
 
-
-
-
-
-  <section class="text-center">
-    <!-- Button trigger modal -->
-    <div data-toggle="modal" data-target="#exampleModalCenter">
-      Launch demo modal
-    </div>
-  
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
   <section id="contact-heading">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col align-self-center">
-          <div class="container">
-            <h1>Contact <i class="fas fa-child"></i></h1>
-          </div>
+    <h1 class="sectionTitle">Contact <i class="fas fa-child"></i></h1>
+  </section>
+
+  <section id="contact" class="text-center">
+    <h3 class="pt-4">Get in Touch with Jason, which means to choose win-win situation! <i class="far fa-handshake"></i></h3>
+    <div class="container">
+      <div class="row pb-5 pb-md-0">
+        <div class="col-6 col-md-3 mt-5">
+          <a href="mailto:jlim40@myseneca.ca">
+            <div class="circle bounce">
+              <i class="fas fa-envelope-square fa-2x"></i>
+            </div>
+            <br>
+            <p>EMAIL</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+          <a href="{% static 'JasonLimResume.pdf' %}" target="_blank">
+            <div class="circle bounce">
+              <i class="fas fa-file-alt fa-2x"></i>
+            </div>
+            <br>
+            <p>RESUME</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+          <a href="https://www.linkedin.com/in/jason-jihoon-lim-773836128/" target="_blank">
+            <div class="circle bounce">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </div>
+            <br>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+          <a href="https://github.com/jlim40" target="_blank">
+            <div class="circle bounce">
+              <i class="fab fa-github fa-2x"></i>
+            </div>
+            <br>
+            <p>Github</p>
+          </a>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="text-center">
-    <h1>Contact!!!</h1>
-  </section>
-
-
-  <!--
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row">
-
-        {% for job in jobs.all %}
-          <div class="col-md-4">
-            <a href="{% url 'jobdetail' job.id %}">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="{{ job.image.url }}">
-                <div class="card-body">
-                  <p class="card-text">{{ job.summary }}</p>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">{{ job.skills }}</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        {% endfor %}
-
-      </div>
-    </div>
-  </div>
--->
 </main>
 
 <footer id="footer" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col ml-auto">
-        <p class="lead">Copyright &copy; 2018</p>
+        <p class="lead">Copyright &copy; 2018 Jason Lim</p>
       </div>
     </div>
   </div>
