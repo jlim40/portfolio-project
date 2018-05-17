@@ -16,7 +16,6 @@ h1 {
 .navbar-brand h3{
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  margin-left: 2rem;
   font-size: 2rem;
 }
 
@@ -101,16 +100,16 @@ h1 {
 
 /* Skills */
 #skills-heading {
-  background: #FEF3E4;
+  background: rgb(255, 245, 231);
   height: 130px;
 }
 
 .fa-code {
-  color: rgb(75, 69, 69);
+  color: rgb(107, 102, 102);
 }
 
 #skills {
-  background: #FEF3E4;
+  background: rgb(255, 245, 231);
 }
 
 #skills .col-2 {
@@ -162,7 +161,7 @@ h1 {
 
 /* Portfolios */
 #portfolio-heading {
-  background: linear-gradient(#FEF3E4, lightpink);
+  background: linear-gradient(rgb(255, 245, 231),rgb(255, 218, 224));
   height: 130px;
 }
 
@@ -171,7 +170,7 @@ h1 {
 }
 
 #portfolio {
-  background: lightpink;
+  background: rgb(255, 218, 224);
 }
 
 #portfolio .larger {
@@ -291,7 +290,7 @@ h1 {
 
 /* Contact */
 #contact-heading {
-  background: linear-gradient(lightpink, #CBEAE5);
+  background: linear-gradient(rgb(255, 218, 224), rgb(223, 255, 250));
   height: 130px;
 }
 
@@ -300,7 +299,7 @@ h1 {
 }
 
 #contact {
-  background: #CBEAE5;
+  background: rgb(223, 255, 250);
   min-height: 40vh;
 }
 
@@ -418,4 +417,68 @@ h1 {
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
+}
+
+
+/* ALL BLOGS */
+.allblogs {
+  position: relative;
+  min-height: 80vh;
+}
+
+.allblogs .container-fluid {
+  height: 550px;
+  background: url("../img/notebook.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.allblogs .container-fluid .row {
+  margin: 0;
+  height: 100%;
+}
+
+.allblogs .container-fluid .col-4 {
+  padding: 0;
+  transform: translateY(-5rem) !important;
+}
+
+.allblogs .container .row {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.allblogs a {
+  text-decoration: none;
+  color: black;
+}
+
+.allblogs h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.mgbot-10 {
+  margin-bottom: 10px;
+}
+
+.button {
+  border: 1px solid lightpink;
+  color: #ff94a4 !important;
+  padding: 3px 11px;
+}
+
+.button:hover, .button:focus {
+  background: lightpink;
+  color: white;
+}
+
+.pagination .current {
+  color: rgb(255, 121, 141)
+}
+
+.pagination a:hover, .pagination a:focus {
+  text-decoration: none;
+  color: white;
 }
