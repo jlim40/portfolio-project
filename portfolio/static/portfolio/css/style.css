@@ -452,6 +452,18 @@ h1 {
   text-transform: uppercase;
 }
 
+@media (max-width: 576px) {
+  .animate {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .animate {
+    font-size: 35px;
+  }
+}
+
 .animate span {
 	display: inline-block;
 }
