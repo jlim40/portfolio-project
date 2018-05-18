@@ -158,13 +158,16 @@
     <div class="container">
       <div class="row px-lg-5 justify-content-center align-items-center">
         {% for job in jobs.all %}
-          <div class="col-sm-6 col-md-4 mb-4">
-            <a href="{% url 'jobdetail' job.id %}">   
-              <div class="larger">
-                <img src="{{ job.image.url }}" class="img img-thumbnail" alt="">
-                <span>{{ job.summary }}</span>
-              </div>     
-            </a>
+          <div class="col-sm-6 col-md-4 px-2 py-2">
+              <a href="{% url 'jobdetail' job.id %}">
+                <div class="view view-first">  
+                  <img src="{{ job.image.url }}" class="img img-thumbnail" />  
+                  <div class="mask">  
+                  <h2>{{ job.summary }}</h2>  
+                  <p>Your Text</p>  
+                </div>  
+              </a>  
+            </div>  
           </div>
         {% endfor %}
       </div>
