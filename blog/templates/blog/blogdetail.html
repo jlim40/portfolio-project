@@ -56,7 +56,9 @@
         {% if blog.image %}
           <img class="img-fluid mb-20" src="{{ blog.image.url }}">
         {% endif %}
-        <p>{{ blog.body }}</p>
+        <div class="blog-body">
+          {{ blog.body | safe }}
+        </div>
       </div>
     </div>
   </div>
