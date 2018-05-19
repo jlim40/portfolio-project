@@ -62,7 +62,7 @@
             <i class="far fa-calendar"></i> {{ blog.pub_date_pretty }}
           </span>
           <p class="mgbot-10">
-            {{ blog.summary }}
+            {{ blog.summary | safe }}
           </p>
           <div class="d-block text-right mgbot-10">
             <a href="{% url 'blogdetail' blog.id %}" class="button">CONTINUE READING</a>
