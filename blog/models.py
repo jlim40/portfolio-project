@@ -11,6 +11,7 @@ class Blog(models.Model):
   pub_date = models.DateTimeField()
   body = models.TextField()
   image = models.ImageField(upload_to='images/', blank=True)
+  photo_credit = models.TextField()
 
   def __str__(self):
     return self.title

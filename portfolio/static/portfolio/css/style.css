@@ -715,6 +715,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+.photo-credit {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
 .blog-body p {
   margin-bottom: 20px;
 }
