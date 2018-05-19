@@ -16,7 +16,7 @@ class Blog(models.Model):
     return self.title
 
   def summary(self):
-    return self.first_words(self.body, 30)
+    return self.first_words(self.body, 35)
 
   def first_words(self, input, words):
     for i in range(0, len(input)):
