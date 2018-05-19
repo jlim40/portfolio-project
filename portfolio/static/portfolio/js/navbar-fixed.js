@@ -28,9 +28,12 @@ function scrollToSection(self) {
   var targetPos = $(href).offset().top - navHeight + 5;
 
   // scroll to target
-  $('html, body').animate({
-    scrollTop: targetPos
-  }, 400);
+  $('html, body').animate(
+    {
+      scrollTop: targetPos
+    },
+    400
+  );
 }
 
 /*
@@ -58,19 +61,23 @@ function activateCurrentSection() {
   * make it active when 50% of it is visible.
   * Otherwise the last section would never activate.
   */
-  var lastSection = sections[sections.length-1];  // get last section
+  var lastSection = sections[sections.length - 1]; // get last section
   var lastSectionTooSmall = $(lastSection).height() < $(window).height();
 
   if (lastSectionTooSmall) {
     var lastSectionTopPos = $(lastSection).offset().top;
     // lastSectionTriggerPos is true if 50% of the last section is visible
-    var lastSectionTriggerPos = $(window).height() + $(document).scrollTop() - ($(lastSection).height()/2);
+    var lastSectionTriggerPos =
+      $(window).height() +
+      $(document).scrollTop() -
+      $(lastSection).height() / 2;
     var lastSectionInView = lastSectionTriggerPos > lastSectionTopPos;
   }
 
   if (lastSectionTooSmall && lastSectionInView) {
     id = $(lastSection).attr('id');
-  } else {  // else last section is >= 100% of the view check all sections to find the top one
+  } else {
+    // else last section is >= 100% of the view check all sections to find the top one
     sections.each(function() {
       var top = $(this).offset().top - navHeight; // get the top & bottom position of the section
       var bottom = top + $(this).outerHeight();
@@ -81,7 +88,7 @@ function activateCurrentSection() {
       * it is the active section.
       */
       if (pos >= top && pos <= bottom) {
-        id = $(this).attr('id');       // store the id of this section
+        id = $(this).attr('id'); // store the id of this section
       }
     });
   }
