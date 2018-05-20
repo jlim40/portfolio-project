@@ -1,4 +1,27 @@
-// var $ = require('jquery');
+$(document).ready(function() {
+  function newQuote() {
+    var rand = Math.floor(Math.random() * quotes.length);
+
+    $('#quote').fadeOut(500, function() {
+      $(this).html('');
+      $(this).html(quotes[rand].quote);
+      $(this).fadeIn(500);
+    });
+    $('#name').fadeOut(500, function() {
+      $(this).html('');
+      $(this).html('- ' + quotes[rand].name);
+      $(this).fadeIn(500);
+    });
+  }
+
+  $('button').click(function(event) {
+    event.preventDefault();
+    newQuote();
+  });
+
+  newQuote();
+});
+
 const quotes = [
   {
     quote: 'Moral indignation is jealousy with a halo.',
@@ -63,27 +86,3 @@ const quotes = [
     name: 'Steve Kim'
   }
 ];
-
-$(document).ready(function() {
-  function newQuote() {
-    var rand = Math.floor(Math.random() * quotes.length);
-
-    $('#quote').fadeOut(500, function() {
-      $(this).html('');
-      $(this).html(quotes[rand].quote);
-      $(this).fadeIn(500);
-    });
-    $('#name').fadeOut(500, function() {
-      $(this).html('');
-      $(this).html('- ' + quotes[rand].name);
-      $(this).fadeIn(500);
-    });
-  }
-
-  $('button').click(function(event) {
-    event.preventDefault();
-    newQuote();
-  });
-
-  newQuote();
-});
