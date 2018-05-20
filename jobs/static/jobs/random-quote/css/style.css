@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #container {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%);
+    text-align: center;
+  }
+  #quoteContainer {
+    min-height: 200px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: red;
+  }
+  p:last-of-type {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  button {
+    cursor: pointer;
+    color: #FF2424;
+    background-color: #fff;
+    font-size: 24px;
+    padding: 7 18px;
+    width: 190px;
+    border-radius: 4px;
+    border: 2px solid #FF2424;
+  }
+  button > span {
+    transition: 0s;
+    display: block;
+    position: relative;
+  }
+  button > span:before {
+    content: '\00bb';
+    position: absolute;
+    left: -15px;
+    transition: 0.5s;
+    opacity: 0;
+    margin: 0 5px;
+    color: white;
+  }
+  button > span:after {
+    content: '\00ab';
+    position: absolute;
+    right: -15px;
+    transition: 0.5s;
+    opacity: 0;
+    margin: 0 5px;
+    color: white;
+  }
+  
+  button:hover {
+    background: red;
+  }
+  
+  button:hover span {
+    color: white;
+  }
+  
+  button:hover span:before {
+    opacity: 1;
+    left: 0;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  button:focus {
+    outline: none;
+  }
+  @media only screen and (max-width: 575.98px) {
+    #container {
+      width: 100%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+    }
+    h1 {
+      margin: 10% auto;
+      margin-bottom: 18%;
+    }
+    #quoteContainer {
+      min-height: 45%;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+  }
