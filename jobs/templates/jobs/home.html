@@ -48,15 +48,15 @@
         </div>
         <div class="col-md-7 pl-4 pl-md-5 align-self-center py-3">
           <div class="text-white">
-            <span class="lead" id="type-it-1"></span><br>
-            <span class="lead pl-4" id="type-it-2"></span><br>
-            <span class="lead pl-4" id="type-it-3"></span><br>
-            <span class="lead pl-4" id="type-it-4"></span><br>
-            <span class="lead pl-5 type-it-yellow" id="type-it-5"></span><br>
-            <span class="lead pl-5" id="type-it-6"></span><br>
-            <span class="lead pl-4" id="type-it-7"></span><br>
-            <span class="lead pl-4" id="type-it-8"></span><br>
-            <span class="lead" id="type-it-9"></span><br>
+            <span id="type-it-1" class="lead"></span><br>
+            <span id="type-it-2" class="lead pl-4"></span><br>
+            <span id="type-it-3" class="lead pl-4"></span><br>
+            <span id="type-it-4" class="lead pl-4"></span><br>
+            <span id="type-it-5" class="lead pl-5 type-it-yellow"></span><br>
+            <span id="type-it-6" class="lead pl-5"></span><br>
+            <span id="type-it-7" class="lead pl-4"></span><br>
+            <span id="type-it-8" class="lead pl-4"></span><br>
+            <span id="type-it-9" class="lead"></span><br>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@
       <div class="row px-lg-5 justify-content-center align-items-center">
         {% for job in jobs.all %}
           <div class="col-sm-6 col-md-4 px-2 py-2">
-              <a href="{% url 'jobdetail' job.id %}">
+              <a href="/job/{{ job.title }}">
                 <div class="view view-first">  
                   <img src="{{ job.image.url }}" class="img img-thumbnail" />  
                   <div class="mask">  

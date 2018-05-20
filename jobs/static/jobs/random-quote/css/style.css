@@ -1,106 +1,208 @@
 * {
   margin: 0;
   padding: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0.8rem;
+  width: calc(100% - 1.6rem);
+  height: calc(100% - 1.6rem);
+  font-family: 'Barlow Condensed', sans-serif;
+  position: relative;
+}
+
+.borderTopRight {
+  position: absolute;
+  border-top: 0.4rem solid red;
+  border-right: 0.4rem solid red;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  box-sizing: border-box;
+  animation: borderAnimation 0.5s linear forwards;
+}
+.borderBottomLeft {
+  position: absolute;
+  border-bottom: 0.4rem solid red;
+  border-left: 0.4rem solid red;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  box-sizing: border-box;
+  animation: borderAnimation 0.5s 0.5s linear forwards;
+}
+@keyframes borderAnimation {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
-  html {
+  1% {
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
     width: 100%;
     height: 100%;
   }
-  body {
-    font-family: 'Barlow Condensed', sans-serif;
-    position: relative;
-    width: 100%;
-    height: 100%;
+}
+
+#container {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+}
+#quoteContainer {
+  min-height: 130px;
+  padding: 20px;
+  font-size: 20px;
+}
+h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: red;
+}
+p:last-of-type {
+  margin-top: 25px;
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
+  color: #FF2424;
+  background-color: #fff;
+  font-size: 24px;
+  padding: 7 18px;
+  width: 190px;
+  border-radius: 4px;
+  border: 2px solid #FF2424;
+}
+button > span {
+  transition: 0s;
+  display: block;
+  position: relative;
+}
+button > span:before {
+  content: '\00bb';
+  position: absolute;
+  left: -15px;
+  transition: 0.5s;
+  opacity: 0;
+  margin: 0 5px;
+  color: white;
+}
+button > span:after {
+  content: '\00ab';
+  position: absolute;
+  right: -15px;
+  transition: 0.5s;
+  opacity: 0;
+  margin: 0 5px;
+  color: white;
+}
+
+button:hover {
+  background: red;
+}
+
+button:hover span {
+  color: white;
+}
+
+button:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+button:focus {
+  outline: none;
+}
+
+footer {
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  bottom: 0.6em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+svg {
+  transform: translateY(20%);
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .borderTopRight {
+    border-top: 0.2rem solid red;
+    border-right: 0.2rem solid red;
+  }
+  .borderBottomLeft {
+    border-bottom: 0.2rem solid red;
+    border-left: 0.2rem solid red;
   }
   #container {
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -70%);
-    text-align: center;
-  }
-  #quoteContainer {
-    min-height: 170px;
-    padding: 20px;
-    font-size: 20px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    height: 100%;
   }
   h1 {
-    margin-bottom: 40px;
-    font-size: 40px;
-    color: red;
+    margin: 10% auto;
+    margin-bottom: 18%;
   }
-  p:last-of-type {
-    margin-top: 25px;
-    font-weight: bold;
+  #quoteContainer {
+    min-height: 45%;
   }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  #quoteContainer {
+    min-height: 250px;
+    padding: 14px;
+    font-size: 18px;
+  }
+
   button {
     cursor: pointer;
     color: #FF2424;
     background-color: #fff;
-    font-size: 24px;
-    padding: 7 18px;
-    width: 190px;
+    font-size: 18px;
+    padding: 5 14px;
+    width: 150px;
     border-radius: 4px;
     border: 2px solid #FF2424;
   }
-  button > span {
-    transition: 0s;
+  footer {
+    font-size: 18px;
+    position: absolute;
     display: block;
-    position: relative;
+    bottom: 0.6em;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  button > span:before {
-    content: '\00bb';
-    position: absolute;
-    left: -15px;
-    transition: 0.5s;
-    opacity: 0;
-    margin: 0 5px;
-    color: white;
+  svg {
+    transform: translateY(20%);
+    width: 25px;
+    height: 25px;
   }
-  button > span:after {
-    content: '\00ab';
-    position: absolute;
-    right: -15px;
-    transition: 0.5s;
-    opacity: 0;
-    margin: 0 5px;
-    color: white;
-  }
-  
-  button:hover {
-    background: red;
-  }
-  
-  button:hover span {
-    color: white;
-  }
-  
-  button:hover span:before {
-    opacity: 1;
-    left: 0;
-  }
-  button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  button:focus {
-    outline: none;
-  }
-  @media only screen and (max-width: 575.98px) {
-    #container {
-      width: 100%;
-      transform: translate(-50%, -50%);
-      height: 100%;
-    }
-    h1 {
-      margin: 10% auto;
-      margin-bottom: 18%;
-    }
-    #quoteContainer {
-      min-height: 45%;
-    }
-    p {
-      font-size: 1.7rem;
-    }
-  }
+}
