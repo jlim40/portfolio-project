@@ -161,7 +161,7 @@
       <div class="row px-lg-5 justify-content-center align-items-center">
         {% for job in jobs.all %}
           <div class="col-sm-6 col-md-4 px-2 py-2">
-              <a href="/job/{{ job.title }}">
+              <a href="/job/{{ job.title }}/">
                 <div class="view view-first">  
                   <img src="{{ job.image.url }}" class="img img-thumbnail" />  
                   <div class="mask">  
