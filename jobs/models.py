@@ -7,11 +7,14 @@ class Job(models.Model):
   summary = models.CharField(max_length=200)
   skills = models.CharField(max_length=200, default='html css javascript')
   priority = models.PositiveSmallIntegerField()
+
+  def __str__(self):
+    return self.summary
+
   # environment
   # created date
-
-# client
-# objective
-# role
-# skills
-# term
+  # client
+  # objective
+  # role
+  # skills
+  # term
