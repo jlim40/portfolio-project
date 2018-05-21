@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
   path('<int:job_id>/', views.jobdetail, name='jobdetail'),
-  path('random-quote-generator/', views.randomquote),
+  # path('random-quote-generator/', views.randomquote),
 ]
