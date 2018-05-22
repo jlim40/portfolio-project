@@ -162,7 +162,7 @@
         {% for job in jobs.all %}
           <div class="col-sm-6 col-md-4 px-2 py-2">
             {% if job.priority > 0 %}
-              <a href="{{ job.link }}">
+              <a href="{{ job.link }}" target="_blank">
             {% else %}
               <a href="{% url 'jobdetail' job.id %}">
             {% endif %}
