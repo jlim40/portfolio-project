@@ -1,0 +1,65 @@
+#front-page {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  border: 5px solid black;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  #front-page {
+    height: 0;
+    border: 0;
+  }
+}
+
+.some-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 1100px;
+  top: 100px;
+  background: brown;
+  animation: fall 2s ease-in forwards;
+}
+
+@keyframes fall {
+  0%   {background-color:brown; left:1100px; top:100px;}
+  100% {background-color:red; left:1500px; top:600px;}
+}
+
+.me-1 {
+  position: absolute;
+  width: 184px;
+  height: 210px;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  background: brown;
+  animation: side 4s ease-in forwards;
+  transform: translateX(195px);
+  opacity: 0;
+  z-index: -1;
+  background: url("../img/front-page/jason1.jpg");
+}
+
+@keyframes side {
+  0% {
+    opacity: 0;
+  }
+  1% {
+      opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(0);
+  }
+}
+
