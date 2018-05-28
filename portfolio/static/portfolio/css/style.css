@@ -194,42 +194,10 @@ body {
 h1 {
   margin-bottom: 0;
 }
-/* 
-.navbar {
-  box-shadow: 2px 2px 5px #3292a6;
-  opacity: 0.9;
-  background: #fff;
-}
 
-.nav-button {
-  cursor: pointer;
-  border: 0;
-}
-
-.is-open .bar1 {
-  -webkit-transform: rotate(45deg) translate(8px, 6px);
-  transform: rotate(45deg) translate(8px, 6px);
-}
-
-.is-open .bar2 {
+.hideme {
   opacity: 0;
 }
-
-.is-open .bar3 {
-  -webkit-transform: rotate(-45deg) translate(8px, -6px);;
-  transform: rotate(-45deg) translate(8px, -6px);
-}
-
-.navbar-brand h3{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.navbar .nav-item {
-  font-size: 1.2rem;
-  padding-right: 20px;
-} */
 
 /* ABOUT ME */
 
@@ -330,17 +298,17 @@ h1 {
 #skills {
   /* background: rgb(255, 245, 231); */
   margin-top: 3rem;
-  min-height: 500px;
+  min-height: 550px;
 }
 
 #skills .col-2 {
   min-width: 180px;
+  padding: 25px;
 }
 
 #skills .img-fluid {
   max-width: 77%;
   opacity: 1;
-  transition: .5s ease;
 }
 
 #skills .middle {

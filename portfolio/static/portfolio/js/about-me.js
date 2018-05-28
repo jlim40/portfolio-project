@@ -65,7 +65,7 @@ new TypeIt('#type-it-1', {
 
                             new TypeIt('#type-it-8', {
                               strings:
-                                'hobby: <span class="type-it-yellow pl-2"> \'Drinking Espresso\'</span>,',
+                                'hobby: <span class="type-it-yellow pl-2"> \'Drinking Espresso\'</span>',
                               speed: 40,
                               autoStart: false,
                               afterComplete: function() {
