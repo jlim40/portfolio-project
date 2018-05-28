@@ -161,7 +161,7 @@
     <div class="container">
       <div class="row px-lg-5 justify-content-center align-items-center">
         {% for job in jobs.all %}
-          <div class="col-sm-6 col-md-4 px-2 py-2">
+          <div class="col-sm-6 col-md-4 px-2 py-2 hideme">
             {% if job.priority > 0 %}
               <a href="{{ job.link }}" target="_blank">
             {% else %}
