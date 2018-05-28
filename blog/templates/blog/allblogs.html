@@ -3,38 +3,20 @@
 {% block content %}
 
 <body id="home">
-
-<nav class="navbar navbar-expand-md navbar-light fixed-top py-2">
-  <div class="container">
-    <a href="{% url 'home' %}" class="navbar-brand">
-      <h3 class="d-inline align-middle">Jason</h3>
-    </a>
-    <div class="navbar-toggler nav-button" data-toggle="collapse" data-target="#navbarNav">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="/#aboutme" class="nav-link">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a href="/#skills-heading" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="/#portfolio-heading" class="nav-link">Portfolios</a>
-        </li>
-        <li class="nav-item">
-          <a href="/#contact-heading" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a href="/blog" class="nav-link">Blog</a>
-        </li>
-      </ul>
-    </div>
+  <div id="dimmer"></div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/#aboutme">AboutMe</a>
+    <a href="/#skills-heading">Skills</a>
+    <a href="/#portfolio-heading">Portfolio</a>
+    <a href="/#contact-heading">Contact</a>
+    <a href="#">Blog</a>
   </div>
-</nav>
+  <div id="nav-button" class="nav-button-visible" onclick="openNav()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
 
 <main role="main" class="allblogs">
   <section class="container-fluid blogheader">
@@ -94,9 +76,9 @@
 </main>
 
 <footer id="footer" class="py-4 text-white">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col ml-auto">
+  <div class="container-fluid">
+    <div class="row text-right">
+      <div class="col">
         <p class="lead">&copy; Jason Lim</p>
       </div>
     </div>

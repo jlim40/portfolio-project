@@ -16,14 +16,12 @@
     <a href="#skills-heading">Skills</a>
     <a href="#portfolio-heading">Portfolio</a>
     <a href="#contact-heading">Contact</a>
+    <a href="/blog">Blog</a>
   </div>
-  <div id="nav-button" onclick="openNav()">
+  <div id="nav-button" class="nav-button-ani" onclick="openNav()">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
-
-    
-    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
   </div>
 
 
@@ -39,41 +37,6 @@
     <div class="me-4"></div>
     <div class="me-5"></div> -->
   </section>
-
-
-
-<!-- <nav class="navbar navbar-expand-md navbar-light fixed-top py-1">
-  <div class="container">
-    <a href="#home" class="navbar-brand">
-      <h3 class="d-inline align-middle">Jason</h3>
-    </a>
-    <div class="navbar-toggler nav-button" data-toggle="collapse" data-target="#navbarNav">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="#aboutme" class="nav-link">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a href="#skills-heading" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="#portfolio-heading" class="nav-link">Portfolios</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact-heading" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a href="{% url 'allblogs' %}" class="nav-link">Blog</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
-
 
 <main role="main">
 
@@ -224,7 +187,6 @@
   </section>
 
   <section id="contact" class="text-center">
-    <!-- <h3 class="pt-4">Get in Touch with Jason, which means to choose win-win situation! <i class="far fa-handshake"></i></h3> -->
     <div class="container">
       <div class="row pb-5 pb-md-0">
         <div class="col-6 col-md-3 mt-5">
@@ -255,7 +217,6 @@
           <a href="https://github.com/jlim40" target="_blank">
             <div class="bounce">
               <i class="fab fa-github fa-2x"></i>
-              <!-- <img src="{% static 'img/contact/github.png' %}" class="bounce"> -->
             </div>
             <br>
           </a>
