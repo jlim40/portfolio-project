@@ -143,17 +143,17 @@ body {
   }
 }
 
-#nav-button-ani:hover .bar1,
-#nav-button-ani:hover .bar2,
-#nav-button-ani:hover .bar3 {
+.nav-button-ani:hover .bar1,
+.nav-button-ani:hover .bar2,
+.nav-button-ani:hover .bar3 {
   animation: bar-animation 0.1s forwards;
 }
 
-#nav-button-ani:hover .bar2 {
+.nav-button-ani:hover .bar2 {
   animation-delay: 0.1s;
 }
 
-#nav-button-ani:hover .bar3 {
+.nav-button-ani:hover .bar3 {
   animation-delay: 0.2s;
 }
 
