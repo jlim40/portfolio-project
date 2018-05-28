@@ -12,4 +12,7 @@ $(document).ready(function() {
       }
     });
   });
+
+  // Delete link for portfolo job
+  $('a[href*="jasonlim.info/#portfolio"]').removeAttr('target');
 });
