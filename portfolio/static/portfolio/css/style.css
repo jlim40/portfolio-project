@@ -16,7 +16,7 @@ body {
 }
 
 .nav-button-ani {
-  animation: nav-appear 0s 3.4s forwards;
+  animation: nav-appear 0s 5.2s forwards;
 }
 
 @keyframes nav-appear {
@@ -108,15 +108,15 @@ body {
 
 .flying-bar1 {
   top: 38px;
-  animation-delay: 1s;
+  animation-delay: 2.8s;
 }
 .flying-bar2 {
   top: 51px;
-  animation-delay: 1.2s;
+  animation-delay: 3.0s;
 }
 .flying-bar3 {
   top: 64px;
-  animation-delay: 1.4s;
+  animation-delay: 3.2s;
 }
 
 @keyframes bar-appear {
