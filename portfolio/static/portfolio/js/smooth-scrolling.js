@@ -19,14 +19,3 @@ $(document).on('click', '#mySidenav a[href^="#"]', function(e) {
   $('body, html').animate({ scrollTop: pos });
   closeNav();
 });
-
-function openNav() {
-  // document.getElementById('mySidenav').style.width = '250px';
-  $('#mySidenav').addClass('open-sidenav');
-  $('#dimmer').addClass('dim-background');
-}
-
-function closeNav() {
-  $('#mySidenav').removeClass('open-sidenav');
-  $('#dimmer').removeClass('dim-background');
-}

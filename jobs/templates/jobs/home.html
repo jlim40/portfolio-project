@@ -4,6 +4,11 @@
 {% block content %}
 
 <body id="home">
+  <script>var toggleNav = () => {
+      // document.getElementById('mySidenav').style.width = '250px';
+      $('#mySidenav').toggleClass('open-sidenav');
+      $('#dimmer').toggleClass('dim-background');
+    };</script>
   <div id="dimmer"></div>
 
   <nav>
@@ -12,14 +17,13 @@
     <div class="flying-bar flying-bar3"></div>
     
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#about-me">AboutMe</a>
       <a href="#skills">Skills</a>
       <a href="#portfolio-heading">Portfolio</a>
       <a href="#contact-heading">Contact</a>
       <a href="/blog">Blog</a>
     </div>
-    <div id="nav-button" class="nav-button-ani" onclick="openNav()">
+    <div id="nav-button" class="nav-button-ani" onclick="toggleNav()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
