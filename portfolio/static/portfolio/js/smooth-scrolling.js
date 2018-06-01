@@ -17,5 +17,7 @@ $(document).on('click', '#mySidenav a[href^="#"]', function(e) {
 
   // animated top scrolling
   $('body, html').animate({ scrollTop: pos });
-  closeNav();
+  $('#mySidenav').removeClass('open-sidenav');
+  $('#dimmer').removeClass('dim-background');
+  $('#nav-button').removeClass('change');
 });
