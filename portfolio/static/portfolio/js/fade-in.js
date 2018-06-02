@@ -15,9 +15,11 @@ $(document).ready(function() {
     $('.bar').each(function(i) {
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
       if (bottom_of_object > $(window).height()) {
-        $(this).addClass('grey');
+        $(this).addClass('gold');
+        $('.flying-bar').addClass('gold');
       } else {
-        $(this).removeClass('grey');
+        $(this).removeClass('gold');
+        $('.flying-bar').removeClass('gold');
       }
     });
   });
