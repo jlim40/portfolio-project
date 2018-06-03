@@ -40,8 +40,16 @@
   color: rgb(196, 196, 196);
 }
 
+#skills li {
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px 0 0;
+}
+
 #skills li span {
   margin-left: 10px;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 767.98px) {
@@ -54,9 +62,10 @@
   }
 }
 
-#skills li {
-  background-color: rgba(0,0,0,0);
-  border: 0;
+@media (max-width: 1199.98px) {
+  #skills li span {
+    font-size: 1rem;
+  }
 }
 
 #skills li img {
