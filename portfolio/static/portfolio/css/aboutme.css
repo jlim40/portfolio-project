@@ -1,16 +1,17 @@
 #about-me {
   min-height: 100vh;
   width: 100%;
-  margin-top: 200px;
+  padding-top: 200px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  background-color: rgba(9,9,9,0.9);
 }
 
 @media (max-width: 767.98px) {
   #about-me {
-    margin-top: 140px;
-    margin-bottom: 100px;
+    padding-top: 140px;
+    padding-bottom: 100px;
   }
 }
 
@@ -46,7 +47,7 @@
 }
 
 #about-me .row {
-  margin-top: 4vw;
+  margin-top: 8vw;
 }
 
 @media (max-width: 767.98px) {
@@ -60,6 +61,7 @@
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
+  color: rgb(196, 196, 196);
 }
 
 @media (max-width: 767.98px) {
@@ -72,14 +74,23 @@
 
 #about-me ul {
   font-family: 'Quicksand', sans-serif;
-  margin-left: 5vw;
+  margin-left: 10vw;
   font-size: 2rem;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #about-me ul {
+    margin-left: 5vw;
+    font-size: 1.8rem;
+  }
+}
+
 #about-me i {
-  color: black;
+  color: #CEBC81;
 }
 
 #about-me li {
   border: 0;
+  background-color: rgba(0,0,0,0);
+  color: rgb(196, 196, 196);
 }
