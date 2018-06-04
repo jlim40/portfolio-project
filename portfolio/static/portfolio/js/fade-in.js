@@ -22,6 +22,10 @@ $(document).ready(function() {
         $('.flying-bar').removeClass('gold');
       }
     });
+
+    $('.object').css({
+      bottom: -($(this).scrollTop() / 10) + 'px' // increase # to make even slower
+    });
   });
 });
 

@@ -18,6 +18,13 @@
   color: #CEBC81;
   text-transform: uppercase;
   text-align: right;
+  margin-right: 5vw;
+}
+
+@media (min-width: 992px) {
+  #skills h1 {
+    margin-right: 12vw;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -33,6 +40,44 @@
 @media (max-width: 767.98px) {
   #skills .row {
     margin-top: 5rem;
+  }
+}
+
+#skills .col-5 {
+  padding-top: 70px;
+}
+
+@media (max-width: 767.98px) {
+  #skills .col-5 {
+    padding-top: 40px;
+  }
+}
+
+#skills li:hover span {
+  font-weight: 900;
+  font-size: 1.3rem;
+  transition: 0.4s;
+  color: #CEBC81;
+}
+
+#skills .small-bar {
+  position: absolute;
+  right: 35vw;
+  width: 200px;
+  height: 7px;
+  background-color: #CEBC81;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #skills .small-bar {
+    right: 27vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #skills .small-bar {
+    right: 20vw;
+    width: 150px;
   }
 }
 
@@ -71,4 +116,13 @@
 #skills li img {
   width: 70px;
   height: 70px;
+}
+
+.object {
+  /* bottom: 200px; */
+  right: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
 }
