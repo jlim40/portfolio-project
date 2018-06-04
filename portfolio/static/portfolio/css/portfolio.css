@@ -111,10 +111,6 @@
   padding:7px 14px;
 }
 
-/* .hovereffect p.info:hover {
-  box-shadow:0 0 5px #fff;
-} */
-
 .hovereffect:hover img {
   -ms-transform:scale(1.2);
   -webkit-transform:scale(1.2);

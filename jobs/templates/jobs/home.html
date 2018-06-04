@@ -138,11 +138,11 @@
 
   <section id="portfolio">
     <div class="container">
-      <h1>Deployment</h1>
-      <div class="small-bar"></div>
+      <h1 data-aos="fade-up" data-aos-delay="200">Deployment</h1>
+      <div class="small-bar" data-aos="fade-up" data-aos-delay="500"></div>
         <div class="row">
           {% for job in jobs.all %}
-            <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-sm-6 col-xs-12"　data-aos="fade-up" data-aos="fade-up" data-aos-delay="800">
               {% if job.priority > 0 %}
                 <a class="info" href="{{ job.link }}" target="_blank">
               {% else %}
