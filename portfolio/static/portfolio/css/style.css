@@ -218,6 +218,58 @@ body {
 .sidenav a {font-size: 18px;}
 }
 
+
+.background-words {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-words span {
+  position: absolute;
+  width: 45vw;
+  font-size: 45vw;
+  font-weight: 600;
+  color: rgba(white, 0.2);
+}
+
+.background-words span:nth-of-type(1) {
+  right: 0;
+  top: 55vw;
+}
+.background-words span:nth-of-type(2) {
+  right: 10vw;
+  top: 92vw;
+}
+.background-words span:nth-of-type(3) {
+  right: 20vw;
+  top: 129vw;
+}
+.background-words span:nth-of-type(4) {
+  right: 30vw;
+  top: 166vw;
+}
+.background-words span:nth-of-type(5) {
+  right: 20vw;
+  top: 203vw;
+}
+.background-words span:nth-of-type(6) {
+  right: 10vw;
+  top: 240vw;
+}
+.background-words span:nth-of-type(7) {
+  right: 20vw;
+  top: 277vw;
+}
+.background-words span:nth-of-type(8) {
+  right: 10vw;
+  top: 314vw;
+}
+.background-words span:nth-of-type(9) {
+  right: 30vw;
+  top: 351vw;
+}
+
 .jobdetails {
   padding-top: 5vw;
   color: rgb(196, 196, 196);
