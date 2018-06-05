@@ -1,0 +1,102 @@
+.blog {
+  background: white;
+}
+
+.allblogs {
+  position: relative;
+  min-height: 80vh;
+}
+
+.blogheader {
+  height: 550px;
+  background: url("../img/notebook.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.allblogs h1 {
+  color: rgba(9,9,9,0.9);
+  padding: 5vw 0;
+  font-size: 4rem;
+}
+
+
+.allblogs .container .row {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.allbぉgogs img {
+  margin-bottom: 10px;
+}
+
+.allblogs a {
+  text-decoration: none;
+  color: rgba(9,9,9,0.9);
+  transition: 0.3s;
+}
+
+.allblogs h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: 0.3s;
+  color: rgba(9,9,9,0.9);
+}
+
+.blogdetails h1 {
+  color: rgba(9,9,9,0.9);
+  padding: 5vw 0;
+  font-size: 4rem;
+}
+
+.blogdetails h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.allblogs .container h4:hover, .allblogs .container h4:focus {
+  color: #CEBC81;
+  text-decoration-line: underline !important;
+}
+
+.mgbot-10 {
+  margin-bottom: 10px;
+}
+
+.allblogs .button {
+  border: 1px solid #CEBC81;
+  font-size: 0.8rem;
+  color: #CEBC81 !important;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+.allblogs  .button:hover, .allblogs  .button:focus {
+  background: #CEBC81;
+  color: rgba(9,9,9,0.9) !important;
+}
+
+.pagination .current {
+  color: #CEBC81;
+}
+
+.pagination a:hover, .pagination a:focus {
+  text-decoration: none;
+  color: rgba(9,9,9,0.9);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.photo-credit {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.blog-body p {
+  margin-bottom: 20px;
+}

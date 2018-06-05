@@ -3,8 +3,8 @@
 
 {% block content %}
 
-
 <body id="home">
+
   <div id="dimmer"></div>
 
   <nav>
@@ -15,8 +15,8 @@
     <div id="mySidenav" class="sidenav">
       <a href="#about-me">AboutMe</a>
       <a href="#skills">Skills</a>
-      <a href="#portfolio-heading">Portfolio</a>
-      <a href="#contact-heading">Contact</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
       <a href="/blog">Blog</a>
     </div>
     <div id="nav-button" class="nav-button-ani">
@@ -65,7 +65,7 @@
         <div class="col-12 col-md-6">
           <ul class="list-group">
             <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="1100"><i class="fas fa-check"></i> Passionate</li>
-            <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="1200"><i class="fas fa-check"></i> Self-Starter</li>
+            <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="1200"><i class="fas fa-check"></i> Self-starter</li>
             <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="1300"><i class="fas fa-check"></i> Dedicated</li>
             <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="1400"><i class="fas fa-check"></i> Detail-oriented</li>
             <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="1500"><i class="fas fa-check"></i> Team Player</li>
@@ -163,99 +163,43 @@
     </div>
   </section>
 
-
- <!--
-  <section id="skills" class="text-center">
+  <section id="contact">
     <div class="container">
-      <div class="row mb-md-4 justify-content-center align-items-center">
-        <div class="col-2 item" data-aos="fade-up">
-          <img src="{% static 'img/skills/html5.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>HTML</p>
+      <h1 data-aos="fade-up" data-aos-delay="200">Contact</h1>
+        <div class="row">
+          <div class="col-12">
+            <p>Stay in Touch!</p>
+          </div>
+          <div class="col-12">
+            <div class="small-bar" data-aos="fade-up" data-aos-delay="500"></div>
           </div>
         </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="150">
-          <img src="{% static 'img/skills/css3.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>CSS</p>
+        <div class="row icons justify-content-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="3000">
+          <div class="col-5 col-lg-2">
+            <div class="circle faa-shake animated-hover">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="col-5 col-lg-2">
+            <div class="circle faa-shake animated-hover">
+              <i class="far fa-file-alt"></i>
+            </div>
+          </div>
+          <div class="col-5 col-lg-2">
+            <div class="circle faa-shake animated-hover">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="col-5 col-lg-2">
+            <div class="circle faa-shake animated-hover">
+              <i class="fab fa-github"></i>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="300">
-          <img src="{% static 'img/skills/js.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>JS</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="450">
-          <img src="{% static 'img/skills/bootstrap.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>BS4</p>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-md-4 justify-content-center align-items-center">
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="450">
-          <img src="{% static 'img/skills/react.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>React</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="300">
-          <img src="{% static 'img/skills/mongodb.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>MongoDB</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="150">
-          <img src="{% static 'img/skills/nodejs.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>Node.js</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up">
-          <img src="{% static 'img/skills/django.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>Django</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center align-items-center">
-        <div class="col-2 item" data-aos="fade-up">
-          <img src="{% static 'img/skills/sass.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>SASS</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="150">
-          <img src="{% static 'img/skills/jquery.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>jQuery</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="300">
-          <img src="{% static 'img/skills/postgresql.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>Postgresql</p>
-          </div>
-        </div>
-        <div class="col-2 item" data-aos="fade-up" data-aos-delay="450">
-          <img src="{% static 'img/skills/git.png' %}" class="img-fluid" alt="">
-          <div class="middle">
-            <p>Git</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
-  -->
 
-<footer id="footer" class="py-4 text-white">
-  <div class="container-fluid">
-    <div class="row text-right">
-      <div class="col">
-        <p class="lead">&copy; Jason Lim</p>
-      </div>
-    </div>
-  </div>
-</footer>
+
+
 {% endblock %}
