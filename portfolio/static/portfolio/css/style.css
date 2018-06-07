@@ -1,6 +1,7 @@
 body {
   position: relative;
   background-color: rgba(9,9,9,0.9);
+  overflow-x: hidden;
 }
 
 #nav-button {
@@ -218,56 +219,135 @@ body {
 .sidenav a {font-size: 18px;}
 }
 
-
 .background-words {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.background-words span {
   position: absolute;
-  width: 45vw;
-  font-size: 45vw;
+  width: 48vw;
+  font-size: 48vw;
   font-weight: 600;
-  color: rgba(white, 0.2);
+  color: rgba(white, 0.1);
 }
 
-.background-words span:nth-of-type(1) {
-  right: 0;
-  top: 105vh;
+.background-words:nth-of-type(1) {
+  left: 50vw;
+  top: 110vh;
 }
-.background-words span:nth-of-type(2) {
-  right: 10vw;
-  top: 175vh;
+.background-words:nth-of-type(2) {
+  left: 30vw;
+  top: 185vh;
 }
-.background-words span:nth-of-type(3) {
-  right: 20vw;
-  top: 245vh;
+.background-words:nth-of-type(3) {
+  left: 50vw;
+  top: 260vh;
 }
-.background-words span:nth-of-type(4) {
-  right: 30vw;
-  top: 315vh;
+.background-words:nth-of-type(4) {
+  left: 30vw;
+  top: 335vh;
 }
-.background-words span:nth-of-type(5) {
-  right: 20vw;
-  top: 385vh;
+.background-words:nth-of-type(5) {
+  left: 10vw;
+  top: 410vh;
 }
-.background-words span:nth-of-type(6) {
-  right: 10vw;
-  top: 455vh;
+.background-words:nth-of-type(6) {
+  left: 30vw;
+  top: 485vh;
 }
-.background-words span:nth-of-type(7) {
-  right: 20vw;
-  top: 525vh;
+.background-words:nth-of-type(7) {
+  left: 50vw;
+  top: 560vh;
 }
-.background-words span:nth-of-type(8) {
-  right: 10vw;
-  top: 595vh;
+.background-words:nth-of-type(8) {
+  left: 30vw;
+  top: 635vh;
 }
-.background-words span:nth-of-type(9) {
-  right: 30vw;
-  top: 665vh;
+.background-words:nth-of-type(9) {
+  left: 10vw;
+  top: 710vh;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .background-words {
+    width: 70vw;
+    font-size: 70vw;
+  }
+  .background-words:nth-of-type(1) {
+    left: 0;
+    top: 150vh;
+  }
+  .background-words:nth-of-type(2) {
+    left: 10vw;
+    top: 210vh;
+  }
+  .background-words:nth-of-type(3) {
+    left: 20vw;
+    top: 270vh;
+  }
+  .background-words:nth-of-type(4) {
+    left: 30vw;
+    top: 330vh;
+  }
+  .background-words:nth-of-type(5) {
+    left: 20vw;
+    top: 390vh;
+  }
+  .background-words:nth-of-type(6) {
+    left: 10vw;
+    top: 450vh;
+  }
+  .background-words:nth-of-type(7) {
+    left: 20vw;
+    top: 510vh;
+  }
+  .background-words:nth-of-type(8) {
+    left: 10vw;
+    top: 570vh;
+  }
+  .background-words:nth-of-type(9) {
+    left: 30vw;
+    top: 630vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .background-words {
+    width: 100vw;
+    font-size: 110vw;
+  }
+  .background-words:nth-of-type(1) {
+    left: 0;
+    top: 130vh;
+  }
+  .background-words:nth-of-type(2) {
+    left: 10vw;
+    top: 200vh;
+  }
+  .background-words:nth-of-type(3) {
+    left: 20vw;
+    top: 270vh;
+  }
+  .background-words:nth-of-type(4) {
+    left: 30vw;
+    top: 340vh;
+  }
+  .background-words:nth-of-type(5) {
+    left: 20vw;
+    top: 410vh;
+  }
+  .background-words:nth-of-type(6) {
+    left: 10vw;
+    top: 480vh;
+  }
+  .background-words:nth-of-type(7) {
+    left: 20vw;
+    top: 550vh;
+  }
+  .background-words:nth-of-type(8) {
+    left: 10vw;
+    top: 620vh;
+  }
+  .background-words:nth-of-type(9) {
+    left: 30vw;
+    top: 690vh;
+  }
 }
 
 .jobdetails {
