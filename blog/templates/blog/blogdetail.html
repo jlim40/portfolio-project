@@ -22,16 +22,14 @@
   </nav>
 
 <main role="main" class="blogdetails">
-  <div class="container text-center">
-    <h1>A Journey of a Web Developer!</h1>
-  </div>
+  <h1>A Journey of a Web Developer!</h1>
 
-  <div class="container mb-5">
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
-        <h2 class="text-center mb-20">{{ blog.title }}</h2>
-        <p class="text-center mb-20">{{ blog.pub_date_pretty }}</p>
-          <img class="img-fluid mb-1" src="{{ blog.image.url }}">
+        <h2 class="text-center">{{ blog.title }}</h2>
+        <p class="text-center">{{ blog.pub_date_pretty }}</p>
+          <img class="img-fluid" src="{{ blog.image.url }}">
           <!-- Photo Credit -->
           <div class="photo-credit">
             {{ blog.photo_credit | safe }}

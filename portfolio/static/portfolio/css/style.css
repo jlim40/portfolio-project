@@ -351,14 +351,42 @@ body {
 }
 
 .jobdetails {
-  padding-top: 5vw;
+  margin-top: 5vw;
   color: rgb(196, 196, 196);
-  min-height: 86vh;
+  min-height: 75vh;
+}
+
+@media (max-width: 767.98px) {
+  .jobdetails {
+    margin-top: 3rem;
+  }
+}
+
+.jobdetails h1 {
+  font-size: 3rem;
+}
+
+.jobdetails .small-bar {
+  width: 30vw;
+  height: 0.5rem;
+  background-color: #CEBC81;
+  display: inline-block;
+  margin: 2rem 0 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .jobdetails .small-bar {
+    width: 70vw;
+    height: 0.4rem;
+  }
 }
 
 
 footer {
   background-color: black;
+  position: absolute;
+  bottom: -150px;
+  width: 100%;
 }
 
 footer h4 {
